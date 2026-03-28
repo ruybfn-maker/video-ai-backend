@@ -1,11 +1,8 @@
 [phases.setup]
-nixPkgs = ["nodejs", "ffmpeg", "python3", "pip"]
+nixPkgs = ["nodejs", "ffmpeg"]
 
 [phases.install]
-cmds = [
-  "npm install",
-  "pip install openai-whisper"
-]
+cmds = ["npm install"]
 
 [start]
 cmd = "node server.js"
